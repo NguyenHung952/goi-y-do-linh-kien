@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống hỗ trợ đo đạc linh kiện điện tử</title>
+    <style>
+        /* Nền gradient hiện đại */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 20px;
+        }
+
+        /* Container có hiệu ứng nổi bật */
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            width: 90%;
+            max-width: 450px;
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #ffcc00;
+        }
+
+        /* Dropdown đẹp hơn */
+        select, button, input {
+            width: 85%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        select {
+            background: rgba(255, 255, 255, 0.3);
+            color: black;
+            font-weight: bold;
+            border: 1px solid white;
+        }
+
+        /* Nút bấm có hiệu ứng hover */
+        button {
+            background: #ffcc00;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #ff9900;
+            transform: scale(1.05);
+            border: 1px solid white;
+        }
+
+        /* Kết quả hiển thị nổi bật */
+        .result {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>🔧 Hệ thống hỗ trợ đo đạc linh kiện điện tử 🔧</h2>
+
+        <label for="component">🔍 Chọn loại linh kiện:</label>
+        <select id="component">
+            <option value="resistor">🟤 Điện trở</option>
+            <option value="capacitor">🟡 Tụ điện</option>
+            <option value="inductor">🟢 Cuộn cảm</option>
+            <option value="diode">🔴 Điốt</option>
+            <option value="transistor">🔵 Transistor</option>
+        </select>
+
+        <button onclick="showGuidance()">📖 Xem hướng dẫn</button>
+
+        <h3>📌 Hướng dẫn đo đạc:</h3>
+        <p class="result" id="guidance">Chọn linh kiện để xem hướng dẫn...</p>
+
+        <h3>✅ Kiểm tra giá trị đo</h3>
+        <input type="number" id="measuredValue" placeholder="Nhập giá trị đo được (Ω, F, H...)">
+        <button onclick="checkValue()">🔎 Kiểm tra</button>
+        <p class="result" id="checkResult">Nhập giá trị đo để kiểm tra...</p>
+    </div>
+
+    <script>
+        function showGuidance() {
+            let component = document.getElementById("component").value;
+            let guidanceText = "";
+
+            switch(component) {
+                case "resistor":
+                    guidanceText = `🟤 Điện trở:\n- Đồng hồ số: Chỉnh về chế độ đo điện trở (Ω). Kẹp hai que đo vào hai đầu điện trở, giá trị hiển thị là điện trở thực tế.\n- Đồng hồ kim: Chỉnh thang đo Ω phù hợp, chập hai que để kiểm tra kim có lệch về 0 không trước khi đo.`;
+                    break;
+                case "capacitor":
+                    guidanceText = `🟡 Tụ điện:\n- Tụ không phân cực: Chọn chế độ đo điện dung, kẹp hai que đo vào hai chân tụ. Nếu giá trị gần đúng thì tụ còn tốt.\n- Tụ phân cực: Xả tụ trước khi đo. Kẹp que đỏ vào chân dương, que đen vào chân âm, kiểm tra điện dung hiển thị.`;
+                    break;
+                case "inductor":
+                    guidanceText = `🟢 Cuộn cảm:\n- Dùng đồng hồ số có chức năng đo L hoặc LCR meter để đo chính xác.\n- Nếu không có đồng hồ đo L, có thể kiểm tra bằng cách đo điện trở cuộn dây (có giá trị nhỏ).`;
+                    break;
+                case "diode":
+                    guidanceText = `🔴 Điốt:\n- Đồng hồ số: Chọn chế độ đo diode. Kẹp que đỏ vào Anode, que đen vào Cathode, nếu có giá trị hiển thị là diode còn tốt.\n- Đồng hồ kim: Chỉnh thang đo Ω thấp, đo giống như đồng hồ số.`;
+                    break;
+                case "transistor":
+                    guidanceText = `🔵 Transistor:\n- BJT: Dùng chế độ đo diode trên đồng hồ số, đo từng chân với Base để xác định PNP/NPN.\n- MOSFET: Đo điện trở giữa Drain-Source với thang đo cao. Nếu có trở kháng thay đổi khi chạm vào Gate thì MOSFET còn tốt.`;
+                    break;
+                default:
+                    guidanceText = "⚠️ Hãy chọn một loại linh kiện để xem hướng dẫn.";
+            }
+
+            document.getElementById("guidance").innerText = guidanceText;
+        }
+
+        function checkValue() {
+            let component = document.getElementById("component").value;
+            let value = parseFloat(document.getElementById("measuredValue").value);
+            let resultText = "";
+
+            if (isNaN(value) || value <= 0) {
+                resultText = "⚠️ Giá trị đo không hợp lệ!";
+            } else {
+                switch(component) {
+                    case "resistor":
+                        resultText = value >= 1 && value <= 1e6 ? "✅ Điện trở hợp lý!" : "⚠️ Điện trở không hợp lệ!";
+                        break;
+                    case "capacitor":
+                        resultText = value >= 1e-12 && value <= 1e-3 ? "✅ Điện dung hợp lý!" : "⚠️ Tụ điện không hợp lệ!";
+                        break;
+                    case "inductor":
+                        resultText = value >= 1e-6 && value <= 1 ? "✅ Cuộn cảm hợp lý!" : "⚠️ Cuộn cảm không hợp lệ!";
+                        break;
+                    case "diode":
+                        resultText = value >= 0.1 && value <= 0.7 ? "✅ Điện áp thuận hợp lý!" : "⚠️ Điốt có vấn đề!";
+                        break;
+                    case "transistor":
+                        resultText = value >= 0.6 && value <= 0.7 ? "✅ Điện áp Base-Emitter hợp lý!" : "⚠️ Transistor có vấn đề!";
+                        break;
+                    default:
+                        resultText = "⚠️ Hãy chọn linh kiện trước!";
+                }
+            }
+
+            document.getElementById("checkResult").innerText = resultText;
+        }
+    </script>
+
+</body>
+</html>
