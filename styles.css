@@ -1,0 +1,75 @@
+/* Nền gradient hiện đại */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px;
+}
+
+/* Container có hiệu ứng nổi bật */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: 90%;
+    max-width: 450px;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+/* Dropdown đẹp hơn */
+select, button, input {
+    width: 85%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+select {
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+/* Nút bấm có hiệu ứng hover */
+button {
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ff9900;
+    transform: scale(1.05);
+    border: 1px solid white;
+}
+
+/* Kết quả hiển thị nổi bật */
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    text-align: left;
+}
