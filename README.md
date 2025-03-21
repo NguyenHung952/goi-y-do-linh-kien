@@ -48,9 +48,7 @@ git clone https://github.com/YOUR-USERNAME/electronic-measurement.git
 2️⃣ Mở file `index.html` trong trình duyệt.  
 3️⃣ Chọn linh kiện và nhập giá trị đo để kiểm tra.  
 
-### 🌍 **2. Chạy trên Google Site**  
-Bạn có thể truy cập vào trang web này để có thể sử dụng chương trình:
-https://sites.google.com/view/mycodinz/g%E1%BB%A3i-%C3%BD-%C4%91o-lk%C4%91t
+
 
 ---
 
