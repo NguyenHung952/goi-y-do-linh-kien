@@ -1,72 +1,155 @@
-# 🔧 Hệ Thống Hỗ Trợ Đo Đạc Linh Kiện Điện Tử 🔧  
-### 🎯 Công cụ hỗ trợ đo và kiểm tra linh kiện điện tử nhanh chóng  
+# 🔧 Hệ Thống Hỗ Trợ Đo Đạc Linh Kiện Điện Tử 🔧
 
-**Hệ thống hỗ trợ đo đạc linh kiện điện tử** giúp bạn dễ dàng tra cứu thông tin đo đạc và kiểm tra giá trị đo được của các linh kiện điện tử phổ biến như **điện trở, tụ điện, cuộn cảm, diode, transistor**.  
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-Web-orange?style=for-the-badge&logo=html5">
+  <img src="https://img.shields.io/badge/CSS3-Responsive-blue?style=for-the-badge&logo=css3">
+  <img src="https://img.shields.io/badge/JavaScript-Electronics-yellow?style=for-the-badge&logo=javascript">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+</p>
 
----
-
-## 🌟 **Tính năng chính**  
-✔️ **Cung cấp hướng dẫn đo đạc chi tiết** cho từng loại linh kiện.  
-✔️ **Kiểm tra giá trị đo** xem có hợp lý hay không.  
-✔️ **Hỗ trợ nhiều loại linh kiện điện tử:**  
-   - 🟤 **Điện trở**  
-   - 🟡 **Tụ điện**  
-   - 🟢 **Cuộn cảm**  
-   - 🔴 **Điốt**  
-   - 🔵 **Transistor**  
-✔️ **Giao diện đơn giản, dễ sử dụng**, hiển thị kết quả trực quan.  
+<p align="center">
+  ⚡ Công cụ hỗ trợ tra cứu và đo đạc linh kiện điện tử nhanh chóng, trực quan và dễ sử dụng.
+</p>
 
 ---
 
-## 🎮 **Cách sử dụng**  
-1️⃣ **Chọn loại linh kiện điện tử** từ danh sách.  
-2️⃣ **Nhấn "📖 Xem hướng dẫn"** để xem cách đo đạc đúng.  
-3️⃣ **Nhập giá trị đo được** vào ô nhập liệu.  
-4️⃣ **Nhấn "🔎 Kiểm tra"** để xác định xem giá trị có hợp lý hay không.  
-5️⃣ **Xem kết quả kiểm tra** được hiển thị ngay trên màn hình.  
+# 📖 Giới thiệu
+
+**Hệ Thống Hỗ Trợ Đo Đạc Linh Kiện Điện Tử** là một web tool hỗ trợ người dùng tra cứu thông tin và kiểm tra giá trị đo của các linh kiện điện tử phổ biến.
+
+Hệ thống hỗ trợ:
+
+- 🔌 Điện trở
+- ⚡ Tụ điện
+- 🌀 Cuộn cảm
+- 🔷 Diode
+- 🔺 Transistor
+
+Người dùng có thể:
+
+- Tra cứu thông số linh kiện
+- Nhập giá trị đo thực tế
+- Kiểm tra kết quả đo
+- So sánh thông số linh kiện nhanh chóng
 
 ---
 
-## 📂 **Cấu trúc thư mục**  
+# 🚀 Demo
+
+🔗 Live Demo:
+
+```bash
+https://nguyenhung952.github.io/
 ```
-electronic-measurement/
-│── index.html      # Giao diện HTML chính
-│── styles.css      # Định dạng giao diện
-│── script.js       # Xử lý logic kiểm tra linh kiện
-└── README.md       # Mô tả dự án
+
+---
+
+# 📂 Cấu trúc Project
+
+```bash
+goi-y-do-linh-kien/
+│
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
 ```
 
 ---
 
-## 🚀 **Cách chạy dự án**  
+# 🛠 Công nghệ sử dụng
 
-### 🖥️ **1. Chạy trên máy tính**  
-1️⃣ Clone hoặc tải mã nguồn về máy:  
-```sh
-git clone https://github.com/YOUR-USERNAME/electronic-measurement.git
+| Công nghệ | Vai trò |
+|---|---|
+| HTML5 | Xây dựng giao diện |
+| CSS3 | Thiết kế UI |
+| JavaScript | Xử lý logic hệ thống |
+
+---
+
+# ⚙️ Chức năng chính
+
+## 📌 Tra cứu linh kiện
+- Thông số cơ bản
+- Giá trị linh kiện
+- Ký hiệu điện tử
+
+## 📌 Hỗ trợ đo đạc
+- Kiểm tra giá trị đo
+- So sánh kết quả thực tế
+- Hiển thị thông tin trực quan
+
+## 📌 Giao diện hệ thống
+- Responsive Design
+- Giao diện tối hiện đại
+- Dễ thao tác trên nhiều thiết bị
+
+---
+
+# 🧠 Kiến thức áp dụng
+
+Project sử dụng các kiến thức:
+
+- Điện tử cơ bản
+- Linh kiện điện tử
+- JavaScript DOM
+- Event Handling
+- Frontend Development
+
+---
+
+# 📸 Điểm nổi bật
+
+✨ Hỗ trợ học tập điện tử  
+✨ Giao diện trực quan hiện đại  
+✨ Chạy trực tiếp trên trình duyệt  
+✨ Không cần cài đặt phần mềm  
+✨ Dễ sử dụng cho sinh viên kỹ thuật
+
+---
+
+# ▶️ Cách chạy project
+
+## Clone repository
+
+```bash
+git clone https://github.com/your-username/goi-y-do-linh-kien.git
 ```
-2️⃣ Mở file `index.html` trong trình duyệt.  
-3️⃣ Chọn linh kiện và nhập giá trị đo để kiểm tra.  
 
+## Chạy ứng dụng
 
+Mở file:
 
----
+```bash
+index.html
+```
 
-## 🎯 **Đóng góp & Cải tiến**  
-Nếu bạn muốn cải thiện dự án, hãy làm theo các bước sau:  
-1️⃣ **Fork** repository này.  
-2️⃣ Tạo một **branch mới** với tính năng bạn muốn thêm.  
-3️⃣ **Commit** thay đổi và **push** lên GitHub.  
-4️⃣ Gửi **pull request** để mình xem xét! 🚀  
+bằng trình duyệt để sử dụng.
 
 ---
 
-## 📜 **Bản quyền & Giấy phép**  
-Dự án này được phát triển với mục đích **học tập và phi lợi nhuận**. Bạn có thể sử dụng, chỉnh sửa và chia sẻ thoải mái.  
+# 🎯 Mục tiêu dự án
+
+- Hỗ trợ học tập điện tử cơ bản
+- Xây dựng công cụ kỹ thuật thực tế
+- Thực hành JavaScript frontend
+- Cải thiện kỹ năng thiết kế web tool
 
 ---
 
-Chúc bạn sử dụng vui vẻ! 🔧📏 **Nếu thấy hay, hãy ⭐ repository này nhé!** 🚀✨  
+# 👨‍💻 Author
+
+**Nguyễn Ngọc Hùng**  
+Sinh viên Điện tử Viễn thông – IUH
 
 ---
 
+# ⭐ Support
+
+Nếu project hữu ích, hãy để lại một ⭐ cho repository.
+
+---
+
+<p align="center">
+  Made with ❤️ using HTML • CSS • JavaScript
+</p>
