@@ -1,8 +1,15 @@
-# Gợi ý đồ linh kiện
+# 🔧 Gợi ý đồ linh kiện
 
-Ứng dụng web hỗ trợ **gợi ý linh kiện điện tử** dựa trên thông tin đầu vào, phục vụ học tập và tham khảo khi thiết kế mạch.
+> Web app hỗ trợ **gợi ý và tra cứu linh kiện điện tử** từ thông tin đầu vào, hướng tới học tập và hỗ trợ thiết kế mạch.
 
-## Cấu trúc
+## ✨ Mục tiêu
+
+- Nhập thông tin nhu cầu hoặc thông số.
+- Xử lý dữ liệu bằng JavaScript.
+- Đưa ra gợi ý linh kiện theo logic hiện có.
+- Giữ trải nghiệm đơn giản, chạy trực tiếp trên trình duyệt.
+
+## 🧱 Cấu trúc
 
 ```text
 goi-y-do-linh-kien/
@@ -12,14 +19,22 @@ goi-y-do-linh-kien/
 └── README.md
 ```
 
-## Thành phần
+## 🚀 Chạy
 
-- `index.html`: giao diện.
-- `script.js`: xử lý logic và gợi ý.
-- `styles.css`: giao diện.
+Mở `index.html` bằng trình duyệt hiện đại. Không cần backend theo cấu trúc hiện tại.
 
-## Mục đích
+## 🛠️ Công nghệ
 
-Hỗ trợ tra cứu/gợi ý nhanh linh kiện trong các bài tập và dự án điện tử.
+`HTML5` · `CSS3` · `JavaScript`
 
-> Mã nguồn hiện có được giữ nguyên; chỉ chuẩn hóa README.
+## 🎓 Mục đích
+
+Hỗ trợ học **điện tử cơ bản**, tra cứu linh kiện và thực hành cách xây dựng công cụ gợi ý bằng JavaScript.
+
+## 📌 Trạng thái
+
+**Electronics Utility / Learning Project** — README được làm mới, mã nguồn hiện có được giữ nguyên.
+
+---
+
+**Nguyễn Ngọc Hùng · IUH**
